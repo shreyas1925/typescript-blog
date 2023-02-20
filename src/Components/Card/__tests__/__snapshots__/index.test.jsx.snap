@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render correctly forming a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="app--blocks-block"
+    data-testid="card"
+  >
+    <div>
+      <img
+        alt=""
+      />
+    </div>
+    <div
+      class="block--timestamp"
+    >
+      <p />
+      <p />
+    </div>
+    <div
+      class="block--description"
+    >
+      <h2 />
+      <p />
+    </div>
+    <hr />
+    <div
+      class="block--icons"
+    >
+      <div
+        class="block--clap"
+      >
+        <img
+          alt=""
+          data-testid="count-img"
+          src="clapping.svg"
+        />
+        <p
+          data-testid="count"
+        >
+          0
+        </p>
+      </div>
+      <div>
+        <img
+          alt=""
+          data-testid="img"
+          src="heart-black.svg"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Footer should render correctly without crashing forming a snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    data-testid="footer"
+  >
+    <h3>
+      &artifact.com 2019
+    </h3>
+  </footer>
+</DocumentFragment>
+`;
+
+exports[`Navbar should render correctly without crashing forming a snapshot 1`] = `
+<DocumentFragment>
+  <header
+    data-testid="navbar"
+  >
+    <div
+      class="logo--header"
+    >
+      <h1>
+        The Artifact
+      </h1>
+      <h3>
+        Culture & Art Blog
+      </h3>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          Blog
+        </li>
+        <li>
+          About
+        </li>
+        <li>
+          Contact
+        </li>
+      </ul>
+    </nav>
+  </header>
+</DocumentFragment>
+`;

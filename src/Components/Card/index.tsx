@@ -17,8 +17,8 @@ type CardProps = {
 }
 const Card = (props:CardProps):JSX.Element => {
 
-  const [count,setCount] = useState(3)
-  const [heart,setHeart] = useState(true)
+  const [count,setCount] = useState(0)
+  const [heart,setHeart] = useState(false)
 
   const handleClick = () => {
     setCount(count+1)
@@ -31,7 +31,7 @@ const Card = (props:CardProps):JSX.Element => {
   const likedImage = heart ? heartRed : heartBlack
   return (
     
-        <div className="app--blocks-block">
+        <div className="app--blocks-block" data-testid='card'>
             <div>
                 <img src={props.image} alt=""/>
             </div>
@@ -46,11 +46,11 @@ const Card = (props:CardProps):JSX.Element => {
             <hr/>
             <div className="block--icons">
                 <div className="block--clap">
-                    <img src={clapping} alt="" onClick={handleClick}/>
-                    <p>{count}</p>
+                    <img src={clapping} alt="" data-testid='count-img' onClick={handleClick}/>
+                    <p data-testid='count'>{count}</p>
                 </div>
                 <div>
-                <img src={likedImage} onClick={() => handleToggle()} alt=""/> 
+                <img src={likedImage} data-testid='img' onClick={() => handleToggle()} alt=""/> 
                 </div>
             </div>
         </div>

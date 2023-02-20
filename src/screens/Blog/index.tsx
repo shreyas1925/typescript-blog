@@ -15,12 +15,12 @@ const Blog = ():JSX.Element  => {
                 data.map((ele)=>{
                     return(
                         <Card date={ele.date} 
-                        readingTime={ele.readingTime} 
-                        title={ele.title}
-                        description={ele.description} 
-                        claps={ele.claps} 
-                        liked={ele.liked} 
-                        image={ele.image}
+                              readingTime={ele.readingTime} 
+                              title={ele.title}
+                              description={ele.description} 
+                              claps={ele.claps} 
+                              liked={ele.liked} 
+                              image={ele.image}
                         />
                     )
                 })

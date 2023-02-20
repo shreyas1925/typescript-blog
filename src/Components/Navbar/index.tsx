@@ -3,7 +3,7 @@ import "./Navbar.css"
 
 const NavBar= ():JSX.Element  => {
   return (
-         <header>
+         <header data-testid='navbar'>
                 <div className="logo--header">
                     <h1>The Artifact</h1>
                     <h3>Culture & Art Blog</h3>
