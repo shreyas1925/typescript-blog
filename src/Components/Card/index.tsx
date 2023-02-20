@@ -1,7 +1,7 @@
 import {useState } from 'react'
-import clapping from "../../../src/Icons/clapping.svg"
-import heartRed from "../../../src/Icons/heart-red.svg"
-import heartBlack from "../../../src/Icons/heart-black.svg"
+import clapping from "../../../src/assets/Icons/clapping.svg"
+import heartRed from "../../../src/assets/Icons/heart-red.svg"
+import heartBlack from "../../../src/assets/Icons/heart-black.svg"
 import "./Card.css"
 
 type CardProps = {

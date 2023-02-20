@@ -1,7 +1,7 @@
 import React from "react";
 import { Card,Footer,NavBar } from "../../Components";
 import "./Blog.css";
-import {data} from "../../mockData/index"
+import {data} from "../../../src/assets/mockData/index"
 
 const Blog = ():JSX.Element  => {
 
