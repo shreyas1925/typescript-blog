@@ -1,8 +1,8 @@
 import {useState } from 'react'
-import clap from "../Icons/clapping.svg"
-import heartRed from "../Icons/heart-red.svg"
-import heartBlack from "../Icons/heart-black.svg"
-import "../styles/Card.css"
+import clapping from "../../../src/Icons/clapping.svg"
+import heartRed from "../../../src/Icons/heart-red.svg"
+import heartBlack from "../../../src/Icons/heart-black.svg"
+import "./Card.css"
 
 type CardProps = {
     date:string,
@@ -30,6 +30,7 @@ const Card = (props:CardProps):JSX.Element => {
 
   const likedImage = heart ? heartRed : heartBlack
   return (
+    
         <div className="app--blocks-block">
             <div>
                 <img src={props.image} alt=""/>
@@ -45,7 +46,7 @@ const Card = (props:CardProps):JSX.Element => {
             <hr/>
             <div className="block--icons">
                 <div className="block--clap">
-                    <img src={clap} alt="" onClick={handleClick}/>
+                    <img src={clapping} alt="" onClick={handleClick}/>
                     <p>{count}</p>
                 </div>
                 <div>

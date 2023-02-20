@@ -1,9 +1,7 @@
 import React from "react";
-import NavBar from "../Components/Navbar";
-import Card from "../Components/Card";
-import Footer from "../Components/Footer";
-import "../styles/Blog.css";
-import {data} from "../mockData/index"
+import { Card,Footer,NavBar } from "../../Components";
+import "./Blog.css";
+import {data} from "../../mockData/index"
 
 const Blog = ():JSX.Element  => {
 
