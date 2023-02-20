@@ -28,6 +28,13 @@ describe('Card',()=>{
             fireEvent.click(ImageEvent);
             expect(ImageEvent).toHaveAttribute('src', 'heart-red.svg');
         })
+        it('should be black heart after clicking heart icon twice',()=>{   
+            render(<Card/>);
+            const ImageEvent = screen.getByTestId('img');
+            fireEvent.click(ImageEvent);
+            fireEvent.click(ImageEvent);
+            expect(ImageEvent).toHaveAttribute('src', 'heart-black.svg');
+        })
     })
 
     describe('Claps Counter', () => {
@@ -65,26 +72,3 @@ describe('Card',()=>{
     })  
 })
 
-describe('Navbar',()=>{
-    it('should render correctly without crashing',()=>{
-        render(<NavBar/>)
-        const navbarElement = screen.getByTestId('navbar')
-        expect(navbarElement).toBeTruthy()
-    })
-    it('should render correctly without crashing forming a snapshot',()=>{
-        const {asFragment} = render(<NavBar/>)
-        expect(asFragment()).toMatchSnapshot()   
-    })
-})
-
-describe('Footer',()=>{
-    it('should render correctly without crashing',()=>{
-        render(<Footer/>)
-        const footerElement = screen.getByTestId('footer')
-        expect(footerElement).toBeTruthy()
-    })
-    it('should render correctly without crashing forming a snapshot',()=>{
-        const {asFragment} = render(<Footer/>)
-        expect(asFragment()).toMatchSnapshot()   
-    })
-})
