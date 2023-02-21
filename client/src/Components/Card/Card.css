@@ -1,11 +1,17 @@
 
 .app--blocks-block {
     width: 320px;
-    height: 480px;
+    /* height: 580px; */
     margin: 10px;
     border: 1px solid #adb5bd;
-}
+    /* overflow-y: scroll; */
+    height:fit-content
 
+}
+.app--blocks-flex{
+    min-height: max-content;
+    flex:1
+}
 .image--block{
     height: 50%;
     width:100%;
@@ -28,21 +34,35 @@ img{
 
 .block--description{
     padding: 12px;
+    flex:1
 }
 
-.block--description h2{
+.block--description > h2{
     margin-bottom: 10px;
     font-weight: 100;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; 
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
 }
 
-.block--description p{
-    color:#6c757d
+.block--description > p{
+    color:#6c757d;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; 
+           line-clamp: 3; 
+   -webkit-box-orient: vertical;
 }
 .block--icons{
-    margin-top: 10px;
+    /* margin-top: 10px; */
     display: flex;
     justify-content: space-between;
     padding: 12px;
+    margin-bottom: -10;
 }
 
 

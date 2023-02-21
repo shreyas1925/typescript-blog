@@ -1,7 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react"
 import Card from ".."
-import NavBar from "../../Navbar";
-import Footer from "../../Footer";
 
 describe('Card',()=>{
     
@@ -70,5 +68,6 @@ describe('Card',()=>{
             expect(countEvent).toHaveTextContent('3');
         })
     })  
+
 })
 
